@@ -1,0 +1,232 @@
+.services-page {
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  padding-top: 5rem; /* Account for fixed navbar */
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-card h2 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service-card button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.service-card button:hover {
+  color: #0056b3;
+}
+
+.form-container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #cccccc;
+  color: #333333;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: fit-content;
+}
+
+.back-button:hover {
+  background-color: #bbbbbb;
+}
+
+.progress-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-title {
+  color: #007bff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.progress-empty {
+  text-align: center;
+  color: #333333;
+  font-size: 1rem;
+}
+
+.progress-list {
+  list-style: none;
+  padding: 0;
+}
+
+.progress-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.progress-item p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.progress-item p strong {
+  color: #007bff;
+}
+
+/* Booking Progress Enhancements */
+.progress-item-date,
+.progress-item-time {
+  background: #e6f3ff; /* Light blue background */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border-left: 3px solid #007bff; /* Blue accent */
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.progress-item-date:hover,
+.progress-item-time:hover {
+  background: #d1e4ff; /* Darker blue on hover */
+}
+
+.progress-item-date::before,
+.progress-item-time::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  left: -1.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.progress-item-date::before {
+  content: "\f073"; /* Calendar icon */
+}
+
+.progress-item-time::before {
+  content: "\f017"; /* Clock icon */
+}
+
+@media (max-width: 768px) {
+  .services-page {
+    padding-top: 4rem;
+  }
+
+  .services-container {
+    padding: 0.5rem;
+  }
+
+  .service-card {
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+
+  .form-container {
+    padding: 0.5rem;
+  }
+
+  .progress-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .progress-item {
+    padding: 0.75rem;
+  }
+
+  .progress-item-date,
+  .progress-item-time {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .progress-item-date::before,
+  .progress-item-time::before {
+    left: -1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .progress-title {
+    font-size: 1.3rem;
+  }
+
+  .progress-item p {
+    font-size: 0.9rem;
+  }
+
+  .progress-item-date,
+  .progress-item-time {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .progress-item-date::before,
+  .progress-item-time::before {
+    left: -1.3rem;
+    font-size: 0.8rem;
+  }
+}

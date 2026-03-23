@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.form-title {
+  color: #007bff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-group input:disabled {
+  background-color: #f0f0f0;
+}
+
+.book-button,
+.next-button,
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #006aff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-button:hover,
+.next-button:hover,
+.submit-button:hover {
+  background-color: #4baeff;
+  transform: translateY(-2px);
+}
+
+.back-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.services-title {
+  color: #007bff;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-title {
+  color: #0056b3;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-card-info {
+  color: #413f3f;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.booking-indicator {
+  color: #12a7d4;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.progress-title {
+  color: #007bff;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.progress-empty {
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+.progress-list {
+  list-style: none;
+  padding: 0;
+}
+
+.progress-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.progress-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.progress-item p strong {
+  color: #007bff;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+  font-size: 24px;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: #e9ecef;
+  color: #3c86c8;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-heading {
+  font-size: 20px;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.total-cost {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.booking-details-card {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid #e9ecef;
+}
+
+.booking-details-icon {
+  font-size: 48px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.booking-details-title {
+  color: #007bff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.booking-details-content {
+  margin-bottom: 30px;
+}
+
+.booking-details-section {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.booking-details-section-title {
+  color: #343a40;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 8px;
+}
+
+.booking-details-content p {
+  font-size: 18px;
+  color: #333;
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.booking-details-content p strong {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.booking-details-error {
+  color: #dc3545;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Booking Details Enhancements */
+.date-field,
+.time-field {
+  background: #e6f3ff; /* Light blue background */
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff; /* Blue accent */
+  font-size: 19px; /* Slightly larger */
+  font-weight: 600; /* Bolder */
+  margin: 12px 0;
+  transition: background 0.3s ease, transform 0.2s ease;
+  position: relative; /* For icons */
+}
+
+.date-field:hover,
+.time-field:hover {
+  background: #d1e4ff; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.date-field::before,
+.time-field::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 18px;
+}
+
+.date-field::before {
+  content: "\f073"; /* Calendar icon */
+}
+
+.time-field::before {
+  content: "\f017"; /* Clock icon */
+}
