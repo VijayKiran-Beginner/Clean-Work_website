@@ -36,4 +36,3 @@ Clean Work is a modern, responsive single-page web application built with **Reac
 Designed and developed with ❤️ by **Vijay Kiran**  
 
 Feel free to fork, star ⭐ or contribute!
-741875c0b087cea307dced8b5238f5153786166b
