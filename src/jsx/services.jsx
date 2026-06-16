@@ -5,7 +5,7 @@ import OfficeCleaningForm from "./OfficeCleaningForm";
 import KitchenCleaningForm from "./KitchenCleaningForm";
 import CarWashingForm from "./CarWashingForm";
 import FactoryCleaningForm from "./FactoryCleaningForm";
-import "../css/Services.css";
+import "../css/services.css";
 import "../css/Booking.css";
 
 function Services() {
