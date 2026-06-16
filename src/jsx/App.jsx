@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate, Outlet } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate, Outlet } from 'react-router-dom';
 import { AuthContext, AuthProvider } from './AuthContext';
 import Home from './Home';
 import Contact from './Contact';
@@ -47,7 +47,7 @@ function Layout() {
 
       {/* Page content */}
       <Routes>
-        <Route path="/" element={<Navigate to="/getstarted" replace />} />
+       <Route path="/" element={<GetStarted />} />
         <Route path="/home" element={
           <>
             <Div2 />
@@ -86,9 +86,7 @@ function App() {
 
   return (
     <AuthProvider>
-      <Router>
         <Layout />
-      </Router>
     </AuthProvider>
   );
 }
